@@ -5,7 +5,7 @@
 from fabric.operations import local
 from datetime import datetime
 
-
+@task
 def do_pack():
     """Function to compress files"""
     local("mkdir -p versions")
